@@ -1,0 +1,329 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="프론트엔드 개발자 김민준의 포트폴리오">
+  <title>김민준</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Fira+Code:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <a class="skip-link" href="#main-content">Skip to Content</a>
+
+  <div class="layout">
+    <header class="sidebar">
+      <div class="sidebar-inner">
+        <div class="sidebar-intro">
+          <h1 class="sidebar-name">
+            <a href="#">김민준</a>
+          </h1>
+          <h2 class="sidebar-title">Frontend Developer</h2>
+          <p class="sidebar-tagline">
+            사용자 경험을 중심으로 웹 서비스를 설계하고 구현합니다.
+          </p>
+        </div>
+
+        <nav class="sidebar-nav" aria-label="주요 섹션">
+          <ul>
+            <li>
+              <a href="#about" class="nav-link active" data-section="about">
+                <span class="nav-number">01.</span> About
+              </a>
+            </li>
+            <li>
+              <a href="#experience" class="nav-link" data-section="experience">
+                <span class="nav-number">02.</span> Experience
+              </a>
+            </li>
+            <li>
+              <a href="#projects" class="nav-link" data-section="projects">
+                <span class="nav-number">03.</span> Projects
+              </a>
+            </li>
+          </ul>
+        </nav>
+
+        <ul class="social-list" aria-label="소셜 링크">
+          <li>
+            <a href="https://github.com" target="_blank" rel="noopener noreferrer" aria-label="GitHub">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/></svg>
+            </a>
+          </li>
+          <li>
+            <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg>
+            </a>
+          </li>
+          <li>
+            <a href="mailto:minjun@example.com" aria-label="Email">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/></svg>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </header>
+
+    <button class="mobile-nav-toggle" aria-label="메뉴 열기" aria-expanded="false" aria-controls="mobile-nav">
+      <span class="hamburger-box">
+        <span class="hamburger-inner"></span>
+      </span>
+    </button>
+
+    <nav class="mobile-nav" id="mobile-nav" aria-label="모바일 네비게이션" hidden>
+      <ul>
+        <li><a href="#about"><span>01.</span> About</a></li>
+        <li><a href="#experience"><span>02.</span> Experience</a></li>
+        <li><a href="#projects"><span>03.</span> Projects</a></li>
+      </ul>
+      <ul class="social-list mobile-social">
+        <li>
+          <a href="https://github.com" target="_blank" rel="noopener noreferrer" aria-label="GitHub">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/></svg>
+          </a>
+        </li>
+        <li>
+          <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg>
+          </a>
+        </li>
+        <li>
+          <a href="mailto:minjun@example.com" aria-label="Email">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/></svg>
+          </a>
+        </li>
+      </ul>
+    </nav>
+
+    <main id="main-content" class="main-content">
+      <section id="about" class="section">
+        <h2 class="section-heading">
+          <span class="section-number">01.</span> About
+        </h2>
+        <div class="about-header">
+          <div class="profile-photo profile-photo--about">
+            <img src="assets/profile.png" alt="김민준 프로필 사진" width="120" height="120">
+          </div>
+        </div>
+        <div class="section-body">
+          <p>
+            안녕하세요, 프론트엔드 개발자 <span class="highlight">김민준</span>입니다.
+            저는 사용자 경험을 중심으로 웹 서비스를 설계하고 구현하는 일을 하고 있습니다.
+            HTML, CSS, JavaScript를 기반으로 React를 주로 사용하며,
+            <span class="highlight">반응형 UI</span>와 <span class="highlight">접근성</span>을 고려한 화면 개발에 관심이 많습니다.
+          </p>
+          <p>
+            코드를 작성할 때는 재사용 가능한 컴포넌트 구조와 유지보수하기 쉬운 코드를 지향합니다.
+            최근에는 협업 도구 대시보드 프로젝트를 진행하며 TypeScript와 REST API 연동 경험을 쌓았고,
+            이전에는 스타트업에서 사내 관리 시스템과 랜딩 페이지를 담당했습니다.
+          </p>
+          <p>
+            새로운 기술을 배우는 것을 좋아하며, 팀과의 원활한 소통을 통해 문제를 함께 해결하는 개발 문화를 선호합니다.
+            앞으로도 더 나은 사용자 경험을 만드는 개발자가 되기 위해 꾸준히 성장하고 싶습니다.
+          </p>
+
+          <ul class="skill-list" aria-label="주요 기술">
+            <li>JavaScript</li>
+            <li>TypeScript</li>
+            <li>React</li>
+            <li>HTML &amp; CSS</li>
+            <li>REST API</li>
+          </ul>
+        </div>
+      </section>
+
+      <section id="experience" class="section">
+        <h2 class="section-heading">
+          <span class="section-number">02.</span> Experience
+        </h2>
+        <div class="experience-wrapper">
+          <div class="experience-tabs" role="tablist" aria-label="경력 목록">
+            <button
+              class="experience-tab active"
+              role="tab"
+              id="tab-1"
+              aria-selected="true"
+              aria-controls="panel-1"
+              data-index="0"
+            >
+              <span class="tab-range">최근</span>
+              <span class="tab-title">협업 도구 대시보드 · Frontend Developer</span>
+            </button>
+            <button
+              class="experience-tab"
+              role="tab"
+              id="tab-2"
+              aria-selected="false"
+              aria-controls="panel-2"
+              data-index="1"
+              tabindex="-1"
+            >
+              <span class="tab-range">이전</span>
+              <span class="tab-title">스타트업 · Frontend Developer</span>
+            </button>
+          </div>
+
+          <div class="experience-panels">
+            <div
+              class="experience-panel active"
+              role="tabpanel"
+              id="panel-1"
+              aria-labelledby="tab-1"
+            >
+              <h3>
+                <span>Frontend Developer</span>
+                <span class="company">
+                  <a href="#" class="inline-link">협업 도구 대시보드</a>
+                </span>
+              </h3>
+              <p class="panel-range">최근</p>
+              <ul class="panel-list">
+                <li>
+                  협업 도구 대시보드 프로젝트를 진행하며 TypeScript와 REST API 연동 경험을 쌓았습니다.
+                </li>
+                <li>
+                  실시간 데이터 시각화와 직관적인 UI 설계에 집중하여 사용자가 정보를 빠르게 파악할 수 있도록 개선했습니다.
+                </li>
+                <li>
+                  재사용 가능한 컴포넌트 구조를 설계하고, 유지보수하기 쉬운 코드 작성을 지향했습니다.
+                </li>
+              </ul>
+              <ul class="tech-list">
+                <li>TypeScript</li>
+                <li>React</li>
+                <li>REST API</li>
+                <li>CSS</li>
+              </ul>
+            </div>
+
+            <div
+              class="experience-panel"
+              role="tabpanel"
+              id="panel-2"
+              aria-labelledby="tab-2"
+              hidden
+            >
+              <h3>
+                <span>Frontend Developer</span>
+                <span class="company">
+                  <a href="#" class="inline-link">스타트업</a>
+                </span>
+              </h3>
+              <p class="panel-range">이전</p>
+              <ul class="panel-list">
+                <li>
+                  사내 관리 시스템과 랜딩 페이지를 담당하며 프론트엔드 전반을 개발했습니다.
+                </li>
+                <li>
+                  빠른 개발 사이클 속에서도 품질과 사용성을 유지하는 것이 핵심 과제였습니다.
+                </li>
+                <li>
+                  반응형 UI와 접근성을 고려한 화면 개발로 다양한 디바이스에서 일관된 경험을 제공했습니다.
+                </li>
+              </ul>
+              <ul class="tech-list">
+                <li>JavaScript</li>
+                <li>React</li>
+                <li>HTML &amp; CSS</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="projects" class="section">
+        <h2 class="section-heading">
+          <span class="section-number">03.</span> Projects
+        </h2>
+        <ul class="project-list">
+          <li class="project-card">
+            <div class="project-content">
+              <p class="project-label">Featured Project</p>
+              <h3>
+                <a href="#" class="inline-link project-title">협업 도구 대시보드</a>
+              </h3>
+              <div class="project-desc">
+                <p>
+                  팀 협업을 위한 대시보드 웹 애플리케이션입니다.
+                  REST API와 연동하여 실시간 데이터를 시각화하고,
+                  직관적인 UI로 업무 효율을 높이는 데 집중했습니다.
+                </p>
+              </div>
+              <ul class="tech-list">
+                <li>TypeScript</li>
+                <li>React</li>
+                <li>REST API</li>
+              </ul>
+              <ul class="project-links">
+                <li>
+                  <a href="#" aria-label="GitHub">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/></svg>
+                  </a>
+                </li>
+                <li>
+                  <a href="#" aria-label="External Link">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+                  </a>
+                </li>
+              </ul>
+            </div>
+            <div class="project-image">
+              <a href="#" class="project-image-link" tabindex="-1" aria-hidden="true">
+                <div class="project-image-inner dashboard-preview" role="img" aria-label="협업 도구 대시보드 미리보기"></div>
+              </a>
+            </div>
+          </li>
+
+          <li class="project-card">
+            <div class="project-content">
+              <p class="project-label">Featured Project</p>
+              <h3>
+                <a href="#" class="inline-link project-title">사내 관리 시스템 &amp; 랜딩 페이지</a>
+              </h3>
+              <div class="project-desc">
+                <p>
+                  스타트업에서 진행한 사내 관리 시스템과 서비스 랜딩 페이지입니다.
+                  반응형 레이아웃과 재사용 가능한 컴포넌트 구조로 빠르게 개발하고 운영했습니다.
+                </p>
+              </div>
+              <ul class="tech-list">
+                <li>JavaScript</li>
+                <li>React</li>
+                <li>HTML &amp; CSS</li>
+              </ul>
+              <ul class="project-links">
+                <li>
+                  <a href="#" aria-label="GitHub">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/></svg>
+                  </a>
+                </li>
+                <li>
+                  <a href="#" aria-label="External Link">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+                  </a>
+                </li>
+              </ul>
+            </div>
+            <div class="project-image">
+              <a href="#" class="project-image-link" tabindex="-1" aria-hidden="true">
+                <div class="project-image-inner landing-preview" role="img" aria-label="랜딩 페이지 미리보기"></div>
+              </a>
+            </div>
+          </li>
+        </ul>
+      </section>
+
+      <footer class="site-footer">
+        <p>
+          HTML, CSS, JavaScript로 직접 제작한 포트폴리오입니다.
+          <span class="highlight">김민준</span>의 자기소개 페이지.
+        </p>
+      </footer>
+    </main>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
